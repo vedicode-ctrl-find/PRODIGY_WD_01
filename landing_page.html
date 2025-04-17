@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+    <script src="javascript.js"></script>
+    <nav class="navbar">
+        <div class="logo">VediCafe</div>
+        
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button class="login-btn"><a href="#contact">Login</a></button>
+          <button class="get-started-btn"><a href="#menu">Get Started</a></button>
+        </div>
+    </nav>
+
+    <div id="home">
+        <div class="card">
+            <h1>Unleash your <span style="color: rgb(165, 104, 42);">morning magic</span><br>with the perfect brew</h1>
+            <p>Fuel your energy, spark creativity, and take on the world, <br>one cup at a time.</p><br>
+            <div style="align-items: center; justify-content: center;display: flex; gap:40px;">
+                <button class="find-style-btn"><a href="#menu">Order now  <i class="fas fa-shopping-cart"></i></a></button>
+                <button class="find-style-btn"><a href="#explore">Explore</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <br><br><br>
+        <h1 class="heading" style="margin-left: 40px; font-weight: bold;">About Us</h1>
+        <hr style="width: 10%; height: 3px; background-color: #a5672a; border: none; margin-left: 40px;margin-top: 10px;">
+        <video class="about-video" autoplay muted loop playsinline>
+          <source src="Untitleddesign.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      
+        <div class="video-overlay-content">
+            
+            <h2>Every Cup Tells a Story</h2>
+            <p>
+              It all begins with a bean — nurtured by skilled hands, under golden sun, on lands rich with tradition. 
+              Our journey is a celebration of every grower, every roast, and every sip that brings people closer.
+            </p>
+            <p>
+              At VediCafe, coffee is not just a drink — it's a ritual, a comfort, a spark of inspiration. 
+              We pour our hearts into selecting beans with care, roasting them with precision, and serving them with warmth.
+            </p>
+            <p>
+              From the farms to your cup, we believe in doing things right — sustainably, passionately, and with pride. 
+              Because every great day starts with a great brew.
+            </p>
+            <br>
+          <button><a href="#explore">Explore More</a></button>
+        </div>
+      </div>
+      
+      <div id="explore" style="background-color: #f4ae99;">
+        <div class="explore-section">
+            <img width="100%" src="Untitled_design.jpg"></img>
+            <h2>Brewed with Passion, Served with Purpose</h2>
+            <p>
+                At VediCafe, we believe coffee is more than a drink — it's a journey. <br>
+                From ethically sourced beans to carefully roasted perfection, <br>
+                every sip is crafted to bring comfort, connection, and joy. <br>
+                This is where your coffee story begins.
+            </p>
+          </div>
+
+          <div class="stats-section">
+            <div class="stat-box">
+              <h2>90,000+</h2>
+              <p>Coffee Cups Brewed</p>
+            </div>
+            <div class="stat-box">
+              <h2>200+</h2>
+              <p>Flavoured Menu</p>
+            </div>
+            <div class="stat-box">
+              <h2>50+</h2>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-box">
+              <h2>100+</h2>
+              <p>Countries Represented</p>
+            </div>
+        </div>
+      </div>
+      
+    <div id="menu">
+        <br><br><br>
+        <h1 class="heading" style="margin-left: 40px; font-weight: bold;">Special menu for you</h1>
+        <hr style="width: 22%; height: 3px; background-color: #a5672a; border: none; margin-left: 40px;margin-top: 10px;">
+        <div class="grid" style="display: grid; grid-template-columns: repeat(3, minmax(250px, 1fr)); gap: 20px;">
+            
+            <div class="products">
+                <img class="product-img" src="https://i0.wp.com/aprioritizedmarriage.com/wp-content/uploads/2018/07/img_5e50b29c3f16f.jpg?fit=1000%2C714&ssl=1" alt="">
+                <div class="description">
+                    <h4>
+                        <span>Waffle Ice Cream</span>
+                        <span>12K</span>
+                      </h4>
+                    <br> 
+                    <p>
+                        <span>Waffle with Ice cream</span>    
+                        <span><button class="cart-btn"><i class="fas fa-shopping-cart"></i></button></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="products">
+                <img class="product-img" src="https://assets.epicurious.com/photos/656a0ef2b429d21e3b5b4903/master/pass/hot-vanilla_HERO_111523_5498_VOG_final.jpg" alt="">
+                <div class="description">
+                    <h4>
+                        <span>Hot Milk</span>
+                        <span>12K</span>
+                      </h4>
+                    <br> 
+                    <p>
+                        <span>Hot Milk with less sugar</span>    
+                        <span><button class="cart-btn"><i class="fas fa-shopping-cart"></i></button></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="products">
+                <img class="product-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTYlmvOgQA6CaoELSx7nAuIKb51Gh45RSjJw&s" alt="">
+                <div class="description">
+                    <h4>
+                        <span>Coffee Ice Cream</span>
+                        <span>12K</span>
+                      </h4>
+                    <br> 
+                    <p>
+                        <span>Coffee with Ice Cream Vanilla</span>    
+                        <span><button class="cart-btn"><i class="fas fa-shopping-cart"></i></button></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="products">
+                <img class="product-img" src="https://images.hindustantimes.com/img/2021/11/27/550x309/Mocha_Cappuccio_1638022539649_1638022558271.jpg" alt="">
+                <div class="description">
+                    <h4>
+                        <span>Cappucino</span>
+                        <span>12K</span>
+                      </h4>
+                    <br> 
+                    <p>
+                        <span>Hot Cappucino</span>    
+                        <span><button class="cart-btn"><i class="fas fa-shopping-cart"></i></button></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="products">
+                <img class="product-img" src="https://t3.ftcdn.net/jpg/13/37/45/46/360_F_1337454617_oBoKuDglKQGWV6IUO3keqSypTp8WXtLn.jpg" alt="">
+                <div class="description">
+                    <h4>
+                        <span>Moccacinno</span>
+                        <span>12K</span>
+                      </h4>
+                    <br> 
+                    <p>
+                        <span>Hot Moccacinno</span>    
+                        <span><button class="cart-btn"><i class="fas fa-shopping-cart"></i></button></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="products">
+                <img class="product-img" src="https://t3.ftcdn.net/jpg/05/06/99/66/360_F_506996647_reHcwiHQEmGXEwjN84EFEvM0aUkZujC1.jpg" alt="">
+                <div class="description">
+                    <h4>
+                        <span>Sandwich</span>
+                        <span>12K</span>
+                      </h4>
+                    <br> 
+                    <p>
+                        <span>Bread with meat and vegetables</span>    
+                        <span><button class="cart-btn"><i class="fas fa-shopping-cart"></i></button></span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact" style="position: relative; width: 100%; height: 30vh;">
+        <div style="background-image: url('https://media.istockphoto.com/id/1400194993/photo/cappuccino-art.webp?b=1&s=612x612&w=0&k=20&c=cmXb9GE4u5NSti-KR5kK6Md5yfKunk9KLkAtg5gcGQQ='); background-size: cover; background-position: center; background-repeat: no-repeat; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.5; z-index: 1;padding: 30px;"></div>
+        <h2 style="color: rgb(17, 16, 16); position: relative; z-index: 2;text-align: center;padding: 30px;">Receiving Best Offers</h2>
+        <p style="position: relative; z-index: 2;text-align: center;color: #0a0a09;">Enter your email here <br> Keep your coffee deals up-to-date.</p>
+        <br><br>
+        <form>
+            <label for="email" style="z-index:2;">
+                Email:
+                <input placeholder="Enter your email" type="email" name="email" id="">
+                <button type="submit">submit</button>
+            </label>
+        </form>
+    </div>
+    <br><br>
+
+    <div style="background-color: #fdf6ee;">
+        <div class="stats-section">
+            <div class="stat-box">
+                <h3>Email Us</h3>
+                <p><i class="fa-solid fa-envelope"> </i>@infocoffeehouse.com</p>
+            </div>
+            <div class="stat-box">
+                <h3>Call Us</h3>
+                <p><i class="fa-solid fa-phone-volume"></i>(233)000-0000</p>
+            </div>
+            <div class="stat-box">
+                <h3>Message Us</h3>
+                <p><i class="fa-brands fa-twitter"></i>@CoffeeCrazeOfficial</p>
+            </div>
+            <div class="stat-box">
+                <h3>Address</h3>
+                <p><i class="fa-solid fa-location-dot"></i>123 Brew Street,
+                    Bean Town, Brewshire 456789</p>
+            </div>
+        </div>
+        <p style="text-align: center;">&copy; VediCafe</p>
+        <br>
+    </div>
+    <br>
+</body>

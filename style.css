@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4d298; 
+  color: #161515;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  opacity: 1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px; 
+}
+
+.nav-links li a {
+  color: #1a1818;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  text-shadow: 0 1px 5px rgba(91, 58, 41, 0.3);
+  color: #e47907e6;
+  font-weight: bold;
+}
+
+.nav-links li a:active {
+  text-shadow: 0 1px 5px rgba(91, 58, 41, 0.3);
+  color: #e2960a;
+  transform: scale(0.95);
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #1b1919;
+  border: 1px solid #d07b04;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background-color: #060a5d;
+  color: #eee3e3;
+  border: none;
+}
+
+.login-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.get-started-btn {
+  background-color: #d07b04;
+  color: #110707;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.get-started-btn:hover {
+  background-color: #060a5d;
+  color: #eee3e3;
+}
+
+.get-started-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+#home {
+  background-image: url('VediCafe.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  position: absolute;
+  top: 50%; 
+  right: 60%;
+  transform: translateY(-50%); 
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 30px; 
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  width: 500px;
+  height: auto;
+  text-align: left;
+  z-index: 20; 
+}
+
+.card h1 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.find-style-btn {
+  align-content: center;
+  padding: 12px 25px;
+  border: none;
+  background-color: #d07b04;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+}
+
+.find-style-btn:hover {
+  background-color: #060a5d;
+}
+
+.find-style-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#menu{
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.grid{
+  display: grid;
+  gap: 20px;
+  padding: 50px 30px;
+  margin-bottom: 10px;
+}
+
+.products {
+  background-color: #fff;
+  color: rgb(5, 5, 5);
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+  width: 80%;
+  overflow: hidden;
+  min-height: 350px; 
+  transition: transform 0.3s ease-in-out;
+  display: flex; 
+  flex-direction: column;
+}
+
+.product-img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.description {
+  padding: 20px;
+  text-align: center;
+}
+
+.description h4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description h4 span {
+  margin-left: 10px; 
+}
+
+
+.description p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description p span{
+  margin-left: 10px;
+}
+
+.cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d07b04;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #060a5d;
+}
+
+.about-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.about-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 700px;
+  z-index: 2;
+}
+
+.video-overlay-content h2 {
+  margin-bottom: 10px;
+  margin-left: 50px;
+  color: #110707;
+}
+
+.video-overlay-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: auto;
+  color: #591f02;
+  font-weight: bold;
+}
+
+.video-overlay-content button {
+  padding: 10px 20px;
+  background-color: #d07b04;
+  border: none;
+  color: white;
+  margin-left: 200px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.video-overlay-content button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.video-overlay-content button:hover {
+background-color: #060a5d;
+}
+
+.explore-section {
+  width: 100%;
+}
+
+.explore-section h2 {
+  margin-bottom: 10px;
+  margin-left: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.explore-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fdf6ee; 
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.stat-box {
+  margin: 20px;
+  min-width: 150px;
+}
+
+.stat-box h2 {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.stat-box h3 {
+ 
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #444;
+}
+
+form{
+  z-index:2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+input {
+  z-index:2;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d8d8d8;
+  border: 1px solid black;
+}
+
+input:hover{
+  border: 1px solid #060a5d;
+}
+button{
+  z-index:2;
+  background-color: #d07b04;
+  color:#fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+button:hover {
+  z-index:2;
+  background-color: #060a5d;
+}
+
+
+
