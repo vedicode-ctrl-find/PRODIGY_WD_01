@@ -386,6 +386,86 @@ button:hover {
   z-index:2;
   background-color: #060a5d;
 }
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    right: 5%;
+    padding: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Responsive for phones */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .card {
+    width: 90%;
+    right: 5%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .video-overlay-content {
+    left: 20px;
+    width: 90%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+  }
+
+  .video-overlay-content h2,
+  .video-overlay-content p,
+  .video-overlay-content button {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
 
 
 
